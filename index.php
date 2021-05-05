@@ -138,7 +138,11 @@
                 break;
 
             default:
-                $requestHandler->setRequestResponse("Error","Invaild path");
+                echo '{';
+                echo '"Data" : {';
+                echo '    "Error" : "Invaild Creds"';
+                echo '}';
+                echo '}';
                 die();
         }
     }
