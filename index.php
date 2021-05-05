@@ -16,10 +16,10 @@
                 break;
 
             case "driver-login":
-                if($arrayOfJSON['driverMobile'] == '8646587689' && $arrayOfJSON['driverPassword'] == 'Password'){
+                if($arrayOfJSON['driverMobile'] == '9876543210' && $arrayOfJSON['driverPassword'] == 'Password'){
                     echo '{';
                     echo '"Data" : {';
-                    echo '    "driverId" : "1234567",';
+                    echo '    "driverId" : "5643",';
                     echo '    "driverName" : "RobertSoCool",';
                     echo '    "driverMobile" : "989496843",';
                     echo '    "driverEmail" : "robert@cool.com",';
@@ -41,19 +41,29 @@
                 break;
 
             case "driver-details":
+                if($arrayOfJSON['driverId'] == '5643'){
                 echo '{';
                 echo '"Data" : {';
-                echo '    "driverId" : "1234567",';
+                echo '    "driverId" : "5643",';
                 echo '    "driverName" : "RobertSoCool",';
                 echo '    "driverMobile" : "989496843"';
                 echo '}';
-                echo '}';                
+                echo '}';
+                }
+                else{
+                    echo '{';
+                    echo '"Data" : {';
+                    echo '    "Error" : "Invaild Creds"';
+                    echo '}';
+                    echo '}';
+                }            
                 break;
 
             case "driver-available-jobs":
+                if($arrayOfJSON['driverId'] == '5643'){
                 echo '{';
                 echo '"Data" : {';
-                echo '    "orderId" : "1234567",';
+                echo '    "orderId" : "5643",';
                 echo '    "customerName" : "Melisa Tan",';
                 echo '    "deliveryTime" : "31 Aug 12:20PM",';
                 echo '    "dropOffLocation" : "Toa Poyah",';
@@ -61,12 +71,21 @@
                 echo '    "requiredVehicle" : "Bike, (Weight < 8kg)"';
                 echo '}';
                 echo '}';
+                }
+                else{
+                    echo '{';
+                    echo '"Data" : {';
+                    echo '    "Error" : "Invaild Creds"';
+                    echo '}';
+                    echo '}';
+                }    
                 break;
 
             case "driver-active-jobs":
+                if($arrayOfJSON['driverId'] == '5643'){
                 echo '{';
                 echo '"Data" : {';
-                echo '    "orderId" : "1234567",';
+                echo '    "orderId" : "5643",';
                 echo '    "customerName" : "Melisa Tan",';
                 echo '    "deliveryTime" : "31 Aug 12:20PM",';
                 echo '    "dropOffLocation" : "Toa Poyah",';
@@ -74,13 +93,22 @@
                 echo '    "requiredVehicle" : "Bike, (Weight < 8kg)"';
                 echo '}';
                 echo '}';
+                }
+                else{
+                    echo '{';
+                    echo '"Data" : {';
+                    echo '    "Error" : "Invaild Creds"';
+                    echo '}';
+                    echo '}';
+                }   
                 break;
 
             case "driver-history-jobs":
+                if($arrayOfJSON['driverId'] == '5643'){
                 echo '{';
                 echo '"Data" : [';
                 echo '    {';
-                echo '        "orderId" : "1234567",';
+                echo '        "orderId" : "5643",';
                 echo '        "customerName" : "Melisa Tan",';
                 echo '        "deliveryTime" : "31 Aug 12:20PM",';
                 echo '        "dropOffLocation" : "Toa Poyah",';
@@ -88,7 +116,7 @@
                 echo '        "requiredVehicle" : "Bike, (Weight < 8kg)"';
                 echo '    },';
                 echo '    {';
-                echo '        "orderId" : "1234567",';
+                echo '        "orderId" : "5643",';
                 echo '        "customerName" : "Melisa Tan",';
                 echo '        "deliveryTime" : "31 Aug 12:20PM",';
                 echo '        "dropOffLocation" : "Toa Poyah",';
@@ -96,7 +124,7 @@
                 echo '        "requiredVehicle" : "Bike, (Weight < 8kg)"';
                 echo '    },';
                 echo '    {';
-                echo '        "orderId" : "1234567",';
+                echo '        "orderId" : "5643",';
                 echo '        "customerName" : "Melisa Tan",';
                 echo '        "deliveryTime" : "31 Aug 12:20PM",';
                 echo '        "dropOffLocation" : "Toa Poyah",';
@@ -105,12 +133,21 @@
                 echo '    }';
                 echo ']';
                 echo '}';
+                }
+                else{
+                    echo '{';
+                    echo '"Data" : {';
+                    echo '    "Error" : "Invaild Creds"';
+                    echo '}';
+                    echo '}';
+                }   
                 break;
 
             case "driver-job-details":
+                if($arrayOfJSON['driverId'] == '5643'){
                 echo '{';
                 echo '    "Data" : {';
-                echo '        "orderId" : "1234567",';
+                echo '        "orderId" : "5643",';
                 echo '        "customerName" : "Melisa Tan",';
                 echo '        "customerMobile" : "989496843",';
                 echo '        "deliveryTime" : "31 Aug 12:20PM",';
@@ -121,7 +158,15 @@
                 echo '        "requiredVehicle" : "Bike, (Weight < 8kg)",';
                 echo '        "priceOfDelivery" : "400" ';
                 echo '    }';
-                echo '}';                    
+                echo '}';   
+                }
+                else{
+                    echo '{';
+                    echo '"Data" : {';
+                    echo '    "Error" : "Invaild Creds"';
+                    echo '}';
+                    echo '}';
+                }               
                 break;
 
             default:
