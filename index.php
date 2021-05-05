@@ -11,20 +11,7 @@
         switch($requestedPath){
             case "driver-register":
                 if(true){
-                    echo '{';
-                    echo           '"Data" : {';
-                    echo           '"orderId" : "1234567",';
-                    echo           '"customerName" : "Melisa Tan",';
-                    echo           '"customerMobile" : "989496843",';
-                    echo           '"deliveryTime" : "31 Aug 12:20PM",';
-                    echo           '"dropOffLocation" : "Toa Poyah",';
-                    echo           '"dropUnitNumber" : "04-123",';
-                    echo           '"pickupLocation" : "Potang Pasir",';
-                    echo           '"pickupUnitNumber" : "04-123",';
-                    echo           '"requiredVehicle" : "Bike, (Weight < 8kg)",';
-                    echo           '"priceOfDelivery" : "400" ';
-                    echo '} ';
-                    echo '}';
+                    echo json_encode($arrayOfJSON);
                 }
                 break;
 
