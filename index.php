@@ -6,7 +6,7 @@
        header('Access-Control-Allow-Origin: *');
        header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
        header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-//        header("Content-Type : application/json");
+//        header("Content-Type : plain/text");
 
 //         if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {    
 //            die();    
@@ -20,6 +20,7 @@
         switch($requestedPath){
             case "driver-register":
                 if(true){
+                    echo "true";
                     echo json_encode($arrayOfJSON);
                     echo vardump($_REQUEST);
                     echo vardump($_SERVER);
