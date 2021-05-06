@@ -3,10 +3,10 @@
     $path = explode('/',$_SERVER['PATH_INFO']);
     $requestedPath = $path[1];
 
-    header('Access-Control-Allow-Origin: http://localhost:4200');
-    header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
-    header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-    header("Content-Type : application/json");
+//     header('Access-Control-Allow-Origin: http://localhost:4200');
+//     header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+//     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+       header("Content-Type : application/json");
 
     if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {    
        die();    
