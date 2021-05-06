@@ -20,11 +20,8 @@
         switch($requestedPath){
             case "driver-register":
                 if(true){
-                    echo "true";
-//                     echo json_encode($arrayOfJSON);
-                    echo vardump($_REQUEST);
-                    echo vardump($_SERVER);
-                }
+                    echo json_encode($arrayOfJSON);
+                  }
                 break;
 
             case "driver-login":
