@@ -71,31 +71,33 @@
             case "driver-available-jobs":
                 if($arrayOfJSON['driverId'] == '5643'){
                 echo '{';
-                echo '"Data" : [{';
-                echo '    "orderId" : "5643",';
-                echo '    "customerName" : "Melisa Tan",';
-                echo '    "deliveryTime" : "31 Aug 12:20PM",';
-                echo '    "dropOffLocation" : "Toa Poyah",';
-                echo '    "pickupLocation" : "Potang Pasir",';
-                echo '    "requiredVehicle" : "Bike, (Weight < 8kg)"';
-                echo '},';
-                echo '{';
-                echo '    "orderId" : "5643",';
-                echo '    "customerName" : "Melisa Tan",';
-                echo '    "deliveryTime" : "31 Aug 12:20PM",';
-                echo '    "dropOffLocation" : "Toa Poyah",';
-                echo '    "pickupLocation" : "Potang Pasir",';
-                echo '    "requiredVehicle" : "Bike, (Weight < 8kg)"';
-                echo '},';
-                echo '{';
-                echo '    "orderId" : "5643",';
-                echo '    "customerName" : "Melisa Tan",';
-                echo '    "deliveryTime" : "31 Aug 12:20PM",';
-                echo '    "dropOffLocation" : "Toa Poyah",';
-                echo '    "pickupLocation" : "Potang Pasir",';
-                echo '    "requiredVehicle" : "Bike, (Weight < 8kg)"';
-                echo '}';
+                echo '"Data" : [';
+                echo '    {';
+                echo '        "orderId" : "5644",';
+                echo '        "customerName" : "Melisa Tan",';
+                echo '        "deliveryTime" : "31 Aug 12:20PM",';
+                echo '        "dropOffLocation" : "Toa Poyah",';
+                echo '        "pickupLocation" : "Potang Pasir",';
+                echo '        "requiredVehicle" : "Bike, (Weight < 8kg)"';
+                echo '    },';
+                echo '    {';
+                echo '        "orderId" : "5645",';
+                echo '        "customerName" : "Melisa Tan",';
+                echo '        "deliveryTime" : "31 Aug 12:20PM",';
+                echo '        "dropOffLocation" : "Toa Poyah",';
+                echo '        "pickupLocation" : "Potang Pasir",';
+                echo '        "requiredVehicle" : "Bike, (Weight < 8kg)"';
+                echo '    },';
+                echo '    {';
+                echo '        "orderId" : "5646",';
+                echo '        "customerName" : "Melisa Tan",';
+                echo '        "deliveryTime" : "31 Aug 12:20PM",';
+                echo '        "dropOffLocation" : "Toa Poyah",';
+                echo '        "pickupLocation" : "Potang Pasir",';
+                echo '        "requiredVehicle" : "Bike, (Weight < 8kg)"';
+                echo '    }';
                 echo ']';
+                echo '}';
                 }
                 else{
                     echo '{';
@@ -110,7 +112,7 @@
                 if($arrayOfJSON['driverId'] == '5643'){
                 echo '{';
                 echo '"Data" : {';
-                echo '    "orderId" : "5643",';
+                echo '    "orderId" : "5647",';
                 echo '    "customerName" : "Melisa Tan",';
                 echo '    "deliveryTime" : "31 Aug 12:20PM",';
                 echo '    "dropOffLocation" : "Toa Poyah",';
@@ -133,7 +135,7 @@
                 echo '{';
                 echo '"Data" : [';
                 echo '    {';
-                echo '        "orderId" : "5643",';
+                echo '        "orderId" : "5641",';
                 echo '        "customerName" : "Melisa Tan",';
                 echo '        "deliveryTime" : "31 Aug 12:20PM",';
                 echo '        "dropOffLocation" : "Toa Poyah",';
@@ -141,7 +143,7 @@
                 echo '        "requiredVehicle" : "Bike, (Weight < 8kg)"';
                 echo '    },';
                 echo '    {';
-                echo '        "orderId" : "5643",';
+                echo '        "orderId" : "5642",';
                 echo '        "customerName" : "Melisa Tan",';
                 echo '        "deliveryTime" : "31 Aug 12:20PM",';
                 echo '        "dropOffLocation" : "Toa Poyah",';
