@@ -3,7 +3,7 @@
     $path = explode('/',$_SERVER['PATH_INFO']);
     $requestedPath = $path[1];
 
-    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Origin: https://dzglobal-head.vercel.app');
     header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
     header("Content-Type : application/json");
