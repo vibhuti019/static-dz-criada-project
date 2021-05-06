@@ -21,7 +21,7 @@
             case "driver-register":
                 if(true){
                     echo "true";
-                    echo json_encode($arrayOfJSON);
+//                     echo json_encode($arrayOfJSON);
                     echo vardump($_REQUEST);
                     echo vardump($_SERVER);
                 }
