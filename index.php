@@ -4,6 +4,7 @@
     $requestedPath = $path[1];
         
     header("Content-Type: application/json");
+    header("Access-Control-Allow-Origin: *");
     $bodyOfRequest = file_get_contents('php://input');
     $arrayOfJSON = json_decode($bodyOfRequest, true);
     
