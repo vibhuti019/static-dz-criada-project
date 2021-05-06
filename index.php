@@ -3,14 +3,14 @@
     $path = explode('/',$_SERVER['PATH_INFO']);
     $requestedPath = $path[1];
 
-//     header('Access-Control-Allow-Origin: http://localhost:4200');
-//     header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
-//     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-//        header("Content-Type : application/json");
+       header('Access-Control-Allow-Origin: *');
+       header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+       header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+       header("Content-Type : application/json");
 
-//     if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {    
-//        die();    
-//     }    
+//         if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {    
+//            die();    
+//         }    
 
 
     $bodyOfRequest = file_get_contents('php://input');
@@ -22,6 +22,7 @@
                 if(true){
                     echo json_encode($arrayOfJSON);
                     echo vardump($_REQUEST);
+                    echo vardump($_SERVER);
                 }
                 break;
 
