@@ -6,11 +6,11 @@
 //     header('Access-Control-Allow-Origin: http://localhost:4200');
 //     header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 //     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-       header("Content-Type : application/json");
+//        header("Content-Type : application/json");
 
-    if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {    
-       die();    
-    }    
+//     if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {    
+//        die();    
+//     }    
 
 
     $bodyOfRequest = file_get_contents('php://input');
@@ -21,6 +21,7 @@
             case "driver-register":
                 if(true){
                     echo json_encode($arrayOfJSON);
+                    echo vardump($_REQUEST);
                 }
                 break;
 
