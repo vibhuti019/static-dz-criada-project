@@ -8,6 +8,11 @@
     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
     header("Content-Type : application/json");
 
+    if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {    
+       die();    
+    }    
+
+
     $bodyOfRequest = file_get_contents('php://input');
     $arrayOfJSON = json_decode($bodyOfRequest, true);
     
